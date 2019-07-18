@@ -1,27 +1,32 @@
 function mostrar()
 {
 //tomo la edad
+
+var rango;
 var laHora = document.getElementById('hora').value;
 laHora = parseInt(laHora);
-var rango;
+
 
 //alert (laHora);
 
-if (laHora > 20){
+if (laHora > 19 && laHora < 25){
   rango = "Noche";
 
-}else if (laHora >11){
+}else if (laHora >11 && laHora <20){
   rango = "Tarde";
 
-}else if (laHora >6){
+}else if (laHora >6 && laHora <12){
   rango = "Mañana";
+
+}else if (laHora >=0 && laHora <7){
+  rango = "Noche";
 
 }else {
   rango = "Error";
 
 }
 
-alert(rango);
+//alert(rango);
 
 switch (rango){
 
