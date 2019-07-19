@@ -32,7 +32,7 @@ function mostrar()
     respuesta = confirm("Desea continuar?");
 
 
-  }while(respuesta!=false)  // VALIDAR isNAN
+  }while(respuesta!=false)  // VALIDAR isNAN!!!!
 
   document.getElementById("maximo").value = max;
   document.getElementById("minimo").value = min;
