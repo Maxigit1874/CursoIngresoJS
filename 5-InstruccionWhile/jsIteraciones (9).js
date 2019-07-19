@@ -5,19 +5,25 @@ function mostrar()
   var num;
   var min;
   var max;
-
-  max = prompt ("Ingrese un numero", "numero");
-  max = parseInt(max);
+  var contador = 0;
 
 	do{
 
-    num = prompt ("Ingrese otro numero", "numero");
+    num = prompt ("Ingrese un numero", "numero");
+    num = parseInt(num);
+
+
+    if (contador == 0){
+      max = num;
+      min = num;
+      contador ++;
+    }
 
     if (num > max){
       max = num;
       max = parseInt(max);
-    }
-    if (num < max && num < min){
+
+    } if (num < min){
       min = num;
       min = parseInt (min);
     }
