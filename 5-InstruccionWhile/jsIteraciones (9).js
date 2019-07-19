@@ -3,24 +3,25 @@ function mostrar()
 
 	var respuesta= true;
   var num;
-  var min=0;
-  var max=0;
+  var min;
+  var max;
 
-  num = prompt ("Ingrese un numero", "numero");
-  num = parseInt (num);
+  max = prompt ("Ingrese un numero", "numero");
+  max = parseInt(max);
 
 	do{
 
-    num = prompt("Ingrese un numero", "numero");
-    num = parseInt(num);
+    num = prompt ("Ingrese otro numero", "numero");
 
     if (num > max){
       max = num;
       max = parseInt(max);
-    }else if (num < min){
+    }
+    if (num < max && num < min){
       min = num;
       min = parseInt (min);
     }
+
 
     respuesta = confirm("Desea continuar?");
 
