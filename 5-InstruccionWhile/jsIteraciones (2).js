@@ -1,7 +1,9 @@
 function mostrar()
 {
   alert('iteración while');
-/*
+
+  /* CON WHILE
+
   var num;
   num = 11;
 

@@ -5,7 +5,8 @@ var clave;
 var cont = 0;
 var resp;
 
-/*
+/* CON WHILE
+
 while (clave != "utn750"){
 
   var clave = prompt("ingrese la clave.");
@@ -18,7 +19,8 @@ while (clave != "utn750"){
   alert ("Clave correcta.");
 */
 
-/*
+/* CON DO WHILE
+
 do {
 
   clave = prompt ("Ingrese la clave");
@@ -42,6 +44,33 @@ if (resp == false){
 }
 */
 
+
+// CON FOR
+
+
+for (cont = 0 ; cont <3; cont ++){
+
+  clave = prompt ("Ingrese su clave","clave ");
+
+  if (clave == "utn750"){
+  
+    alert ("Clave correcta!");
+    break;
+
+  }else {
+    alert ("Clave incorrecta!");
+  }
+    
+}
+    
+if (cont == 3){
+
+  alert ("Intentos agotados");
+
+  }else {
+
+  alert ("Bienvenido");
+  }
 
 
 }//FIN DE LA FUNCIÓN

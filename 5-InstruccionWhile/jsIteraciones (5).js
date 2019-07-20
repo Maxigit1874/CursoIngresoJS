@@ -14,6 +14,10 @@ while (sexo != "f" && sexo != "m"){
 document.getElementById('Sexo').value=sexo;
 */
 
+
+
+/*CON DO WHILE 
+
 var sexo;
 
 do {
@@ -24,5 +28,17 @@ do {
 }while (sexo != "f" && sexo !="m");
 
 document.getElementById('Sexo').value=sexo;
+*/
+
+var sexo;
+
+for ( ; sexo != "f" && sexo != "m" ; ){
+
+  sexo = prompt("Ingrese f o m");
+
+}
+
+document.getElementById("Sexo").value = sexo;
+
 
 }//FIN DE LA FUNCIÓN
