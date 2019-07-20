@@ -28,14 +28,23 @@ var acumulador = 0;
 do {
 
   num = prompt ("ingrese numero",  "numero");
-  num = parseInt (num);
+  num = parseInt(num);
+
+  while (isNaN (num)){
+    
+    num = prompt ("Ingrese un numero", "numero");
+    num = parseInt(num);
+
+  }
+
+
   acumulador += num;
   acumulador = parseInt (acumulador);
 
   contador ++;
 
 
-}while (contador >5);    //VALIDAR CON isNaN (num);
+}while (contador <5);    //VALIDAR CON isNaN (num);
 
 
 

@@ -13,6 +13,14 @@ function mostrar()
     num = parseInt(num);
 
 
+    while (isNaN (num)){
+    
+    num = prompt ("Ingrese un numero", "numero");
+    num = parseInt(num);
+
+    }
+
+
     if (contador == 0){
       max = num;
       min = num;
@@ -32,7 +40,7 @@ function mostrar()
     respuesta = confirm("Desea continuar?");
 
 
-  }while(respuesta!=false)  // VALIDAR isNAN!!!!
+  }while(respuesta!=false)  
 
   document.getElementById("maximo").value = max;
   document.getElementById("minimo").value = min;

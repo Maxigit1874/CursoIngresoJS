@@ -13,6 +13,15 @@ function mostrar()
 
     num = prompt("Ingrese numero ", "numero");
     num = parseInt (num);
+
+    
+    while (isNaN (num)){
+    
+      num = prompt ("Ingrese un numero", "numero");
+      num = parseInt(num);
+  
+    }
+
     acumulador = acumulador + num;
     contador ++;
 

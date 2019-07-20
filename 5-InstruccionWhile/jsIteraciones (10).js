@@ -47,7 +47,7 @@ function mostrar()
 
       resp = confirm ("Desea continuar?");
   
-    }while (resp == true);
+    }while (resp);
 
   console.log ("Cantidad de positivos: " + cantPos);
   console.log ("Cantidad de negativos: " + cantNeg);
@@ -58,7 +58,7 @@ function mostrar()
   console.log ("Cantidad de impares: " + cantImp);
   console.log ("Promedio positivos: " + pos / cantPos);
   console.log ("Promedio negativos: " + neg / cantNeg);
-  console.log ("Diferencia entre positivos y negativos: " + pos - neg);
+  console.log ("Diferencia entre positivos y negativos: " + (pos - neg));
 
 
 }    //FIN DE LA FUNCIÓN

@@ -11,7 +11,15 @@ function mostrar()
 
     num = prompt ("Ingrese un numero","numero");
     num = parseInt(num);
+    
+    while (isNaN (num)){
+    
+      num = prompt ("Ingrese un numero", "numero");
+      num = parseInt(num);
+  
+    }
 
+    
     if (num >0){
       positivo += num;
     }else negativo *= num;
