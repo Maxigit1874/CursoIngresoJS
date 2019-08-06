@@ -12,7 +12,7 @@ var temPesMax;
 var promedio;
 var temp;
 var tempPares = 0;
-var resp = true;
+var resp;
 var cont = 0;
 var contMen0 = 0;
 
